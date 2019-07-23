@@ -6,6 +6,8 @@ body {margin: 0px; padding: 0px; background-image: url(images/shipping\ containe
 
 .logo-wrapper {margin: auto; width: 129px;}
 
+a:active {outline: none;}
+
 /*------------------------------Search----------------------------------*/
 
 .result-list {display: none;}
@@ -29,6 +31,10 @@ body {margin: 0px; padding: 0px; background-image: url(images/shipping\ containe
 .result-li {background-color: white;border-radius: 12px;}
 
 details {padding: 17px;}
+
+details:focus {outline: none;}
+
+summary:focus {outline: none;}
 
 summary > h3 {font-size: 16px;color: black}
 
