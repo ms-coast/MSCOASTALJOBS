@@ -8,6 +8,10 @@ body {margin: 0px; padding: 0px; background-image: url(images/shipping\ containe
 
 a:active {outline: none;}
 
+a {text-decoration: none;-webkit-tap-highlight-color: transparent;}
+
+
+
 /*------------------------------Search----------------------------------*/
 
 .result-list {display: none;}
