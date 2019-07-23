@@ -19,14 +19,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="Branding/favicon.png" />
     <script src="Script.js"></script>
-
-
-<script type="text/javascript" src="js/redirection-mobile.js"></script><script type="text/javascript">// <![CDATA[
- SA.redirection_mobile ({
- mobile_url : "https://www.m.mscoastaljobs.com",
- });
- 
-// ]]></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
           google_ad_client: "ca-pub-5381330417949875",
@@ -68,18 +60,12 @@
        
             
             <div class="micro-spacer"></div>
-
-           
         {{/each}}
     
     </script>
  
     <script id="item-template2" type="text/x-handlebars-template">
-        <div id="upload" class="fil-upload">
-            <div class="file-upload-container">
-                <iframe src="https://www.docdroid.net/"></iframe>
-            </div>
-        </div>
+
         {{#each this}}
 <style>
 #{{jobID}} {display:none;opacity:0;transition:0.5s ease;}
@@ -118,126 +104,17 @@
                              <p>{{aboutYourBusiness}}</p>
                          </div>
                          <div class="job-buttons">
-                
+                            <a href="" style="margin-left: 15px;"><button>Apply</button></a>
                             <a href=""><button>Save For Later</button></a>
                            
                         </div>
                          <div class="job-links">
-                            <a href="mailto:{{contactE-Mail}}" target="_blank">{{contactE-Mail}}</a>
-                            <a href="{{website}}" target="_blank">Website</a>
-                            <a href="tel:{{phoneNumber}}" target="_blank">{{phoneNumber}}</a>
-                            <a href="https://maps.google.com/?q={{address}}" target="_blank">{{address}}</a>
+                            <a href="" target="_blank">E-Mail</a>
+                            <a href="" target="_blank">Website</a>
+                            <a href="" target="_blank">Phone Number</a>
+                            <a href="" target="_blank">Gulfport</a>
+                            <a href="" target="_blank">Address</a>
                                                  </div>
-
-                     <div id="{{applyID}}" class="apply-form">
-                            <label>Apply</label>
-
-
-                            <hr />
-                            <form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
-                            <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactE-Mail}}" />
-                            <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="JCN4EDEZR9JZ" />
-                            <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
-                            <input id="skip_Subject" name="skip_Subject" type="hidden" value="Employment Application" />
-                            <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
-                            <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
-                            <table border="0" cellpadding="5" cellspacing="0">
-                            <tr>
-                            <td style="width:50%">
-                            <b>First name *</b><br />
-                            <input class="input-styling" name="First_Name" type="text" maxlength="50" style="width:245px" />
-                            </td>
-                            
-                            <td style="width:50%">
-                            <b>Last name *</b><br />
-                            <input class="input-styling" name="Last_Name" type="text" maxlength="50" style="width:245px" />
-                            </td>
-                            </tr>
-                            <tr>
-                            <td colspan="2">
-                            <b>Email *</b><br />
-                            <input class="input-styling" name="Email_Address" type="email" maxlength="100" style="width:535px" />
-                            </td>
-                            </tr>
-                            <tr>
-                            <td colspan="2">
-                            <b>Portfolio website</b><br />
-                            <input class="input-styling" name="Portfolio" type="url" maxlength="255" value="https://" style="width:535px" />
-                            </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                <b>Upload Resume</b><br />
-                                <input class="input-styling" name="Portfolio" type="text" maxlength="255" value="" style="width:535px" />
-                                <h5 onclick="upload">Upload</h5>
-                                </td>
-                                </tr>
-                            <tr>
-                          
-                            <td style="width:50%">
-                            <b>When can you start?</b><br />
-                            <input class="input-styling" name="StartDate" type="date" maxlength="50" style="width:245px" />
-                            </td>
-                            
-                           
-                            <td style="width:50%">
-                            <b>Phone *</b><br />
-                            <input class="input-styling" name="Phone" type="text" maxlength="50" style="width:245px" />
-                            </td>
-                          
-                            </tr>
-                            <tr>
-                            <td colspan="2">
-                            <b>Are you willing to relocate?</b><br />
-                            <input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes &nbsp; &nbsp; &nbsp;
-                            <input name="Relocate" type="radio" value="No" /> No &nbsp; &nbsp; &nbsp;
-                            <input name="Relocate" type="radio" value="NotSure" /> Not sure
-                            </td>
-                            </tr>
-                            <tr>
-                            <td colspan="2">
-                            <b>Last company you worked for</b><br />
-                            <input class="input-styling" name="Organization" type="text" maxlength="100" style="width:535px" />
-                            </td>
-                            </tr>
-                            <tr>
-                            <td colspan="2">
-                            <b>Reference / Comments / Questions</b><br />
-                            <textarea name="Reference" rows="7" cols="40" style="width:535px"></textarea>
-                            </td>
-                            </tr>
-                            </table>
-                            <br />
-                            <div style="text-align:center;">
-                            <table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
-                            <tr><td colspan="2" style="padding-bottom:18px;">
-                            <!-- Please check our ProCaptcha service which is ad-free:
-                            https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
-                            <a href="http://www.snaphost.com/captcha" alt="captcha verification" title="captcha verification">
-                            captcha verification</a></td></tr>
-                            <tr>
-                            <td><i>Enter security code</i></td>
-                            <td>SECURITY CODE</td>
-                            </tr>
-                            <tr>
-                            <td>
-                            <input class="input-styling" name="skip_CaptchaCode" type="text" maxlength="6"
-                            style="width:130px; height:28px; font-size:24px; text-align:center;" />
-                            </td>
-                            <td>
-                            <a href="https://www.snaphost.com/captcha/ReadyForms/EmploymentApplicationForm.aspx"><img id="CaptchaImage" alt="Employment Application form" title="HTML code for Employment Application web form"
-                            style="margin-left:20px; border:1px solid #999999;"
-                            src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=JCN4EDEZR9JZ&ImgType=2" /></a>
-                            <br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');" target="_blank"><span style="font-size:12px;">reload image</span></a>
-                            </td>
-                            </tr>
-                            </table>
-                            <br /><br />
-                            <input name="skip_Submit" type="submit" value="Send Application" />
-                            </div>
-                            </form>
-
-                     </div>
                      </div>
                      
                  </div>
@@ -257,28 +134,45 @@
 
 <body>
     <nav id="header">
-            
 <div class="logo-container"><img class="logo" src="Branding/ms coastal jobs7w.png" id="colored-l" alt="MS Coastal Jobs Logo White"><img class="logo " alt="MS Coastal Jobs Logo Colored" id="white-l" src="Branding/ms coastal jobs.png"></div>
         <ul>
             <li><a class="active-btn" href="index.html">Home</a></li>
-            <li><a href="policies.html">Policies</a></li>
-            <li><a href="https://www.mscoast.org/contact-us" target="_blank">Contact Us</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="Pricing.html">Saved Jobs</a></li>
         </ul>
         <div class="login-options">
             <a href="createpost.html"><button style="background-color: white; color: black;">Post A Job</button></a>
             <a href="Pricing.html"><button>Sign Up</button></a>
             <a href="signin.html"><button>Log In</button></a>
         </div>
-
     </nav>
-    
+
     <div class="spacer" style=""></div>
-<ul id="show-items"></ul>
+
     <div class="hero-text" id="hero-text">
         <h1>FIND A JOB IN HARRISON COUNTY, MISSISSIPPI</h1>
         <a href=""><p>By Harrison County Development Commission</p></a>
     </div>
-    
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://mscoastaljobs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <section class="search" id="main-search">
         <div class="search-wrapper">
             <div class="search-input-container"> <input autocomplete="off" autofocus class="search-input" type="search"
@@ -315,7 +209,8 @@
                 <h3>What You Searched For Is Currently Unavailable !</h3>
             </div>
             <li><a href=""></a></li>
-       
+
+
             <div id="items"></div>
         </ul>
 
@@ -336,7 +231,7 @@
                 document.getElementsByClassName("result-list")[0].style.display = "block";
             }
             </script>
-        </h5>
+        </a>
         <script>
             AOS.init();
         </script>
@@ -405,26 +300,6 @@
             }
         });
 
-    </script>
-   <script type="text/javascript">
-    function ValidateForm(frm) {
-    if (frm.First_Name.value == "") {alert('First name is required.');frm.First_Name.focus();return false;}
-    if (frm.Last_Name.value == "") {alert('Last name is required.');frm.Last_Name.focus();return false;}
-    if (frm.Email_Address.value == "") {alert('Email address is required.');frm.Email_Address.focus();return false;}
-    if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email_Address.focus();return false;}
-    
-    if (frm.Phone.value == "") {alert('Phone is required.');frm.Phone.focus();return false;}
-    if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
-    return true; }
-    function ReloadCaptchaImage(captchaImageId) {
-    var obj = document.getElementById(captchaImageId);
-    var src = '' + obj.src;
-    obj.src = '';
-    var date = new Date();
-    var pos = src.indexOf('&rad=');
-    if (pos >= 0) { src = src.substr(0, pos); }
-    obj.src = src + '&rad=' + date.getTime();
-    return false; }
     </script>
 </body>
 
