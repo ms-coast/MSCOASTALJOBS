@@ -132,7 +132,17 @@
         <script>
             AOS.init();
         </script>
+  <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 300) {
+                $("#mySearch").addClass("active");
+            } else {
+                $("#mySearch").removeClass("active");
+            }
+        });
 
+    </script>
     </section>
 
 </head>
