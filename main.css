@@ -16,7 +16,7 @@ body {margin: 0px; padding: 0px; background-image: url(images/shipping\ containe
 
 .search-input:focus {outline: none;}
 
-.search-icon {float: right;margin-top: -35px;z-index: 10;position: relative;margin-right: 15px;}
+.search-icon {float: right;margin-top: -45px;z-index: 10;position: relative;margin-right: 5px;padding: 10px;padding-right: 15px; padding-left: 15px;}
 
 .result-element {background-color: white;width: 100%;border-radius: 12px;}
 
@@ -30,13 +30,20 @@ body {margin: 0px; padding: 0px; background-image: url(images/shipping\ containe
 
 details {padding: 17px;}
 
-summary > h3 {font-size: 16px;}
+summary > h3 {font-size: 16px;color: black}
 
-summary > h4 {font-size: 12px;font-weight: normal;margin-top: -10px;}
+summary > h4 {font-size: 12px;font-weight: normal;margin-top: -10px;color: black}
 
-summary > span {font-size: 10px;float:right;margin-right: 25px;}
+summary > span {font-size: 10px;float:right;margin-right: 25px;color: black}
+
+summary > p {font-size: 14px; color: black;}
+
+.result-expand > p {color: black;}
+.result-expand > label {color: black;font-weight: bold;}
 
 .result-li {margin-top: 20px;}
+
+
 
 details summary::-webkit-details-marker {
     background: url(/Assets/baseline-keyboard_arrow_down-24px.svg) center no-repeat;
