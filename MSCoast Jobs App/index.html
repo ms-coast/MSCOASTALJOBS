@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MS Coastal Jobs</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="description"
+        content="We empower businesses and hard-working members of our community by connecting people with businesses.">
+    <meta name="keywords"
+        content="Harrison County, Mississippi Jobs, Gulfcoast Jobs, Gulfport Jobs, Longbeach Jobs, Biloxi Jobs, Industrial Jobs, ">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Branding/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <script src="Script.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5381330417949875",
+            enable_page_level_ads: true
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/17a8d6e0-1c89-47ef-9acd-34a07b65659c', function (data) {
+                var template = Handlebars.compile($('#item-template').html())
+                $('#items').html(template(data))
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/17a8d6e0-1c89-47ef-9acd-34a07b65659c', function (data) {
+                var template = Handlebars.compile($('#item-template2').html())
+                $('#viewer').html(template(data))
+            })
+        })
+    </script>
+    <script id="item-template" type="text/x-handlebars-template">
+<style>
+</style>
+        {{#each this}}
+        <li class="result-li" style="list-style-type:none;"><a  href="#{{jobID}}">
+            <details>
+           <summary>
+            <h3>
+                    {{jobPosition}}
+            </h3>
+
+            <span>{{pay}}</span>
+         
+            <h4>
+{{companyName}}
+            </h4>
+            <p>
+                    {{jobDescription}}
+            </p>
+        </div>
+    </summary>
+   
+
+    <div class="result-expand animated fadeIn"  id="{{jobID}}" >
+        <label>Job Description</label>
+        <p>{{jobDescription}}</p>
+        <div class="spacer"></div>
+        <label>Job Requirements</label>
+        <p>{{jobDescription}}</p>
+        <div class="spacer"></div>
+        <label>About Us</label>
+        <p>{{jobDescription}}</p>
+    </div>
+</details>
+</a>
+</li>
+
+        {{/each}}
+    
+    </script>
+    <script id="item-template2" type="text/x-handlebars-template">
+
+        {{#each this}}
+
+        {{/each}}
+    
+    </script>
+
+    <div class="homescreen">
+    <div class="background-image"><img src="images/shipping container.webp"></div>
+    <div class="logo-wrapper"><img src="branding/ms coastal jobs7w.png"></div>
+    <section class="search" id="main-search">
+        <div class="search-wrapper">
+            <div class="search-input-container"> <input autocomplete="off" autofocus class="search-input" type="search"
+                    id="mySearch" onkeyup="myFunction()" placeholder="&emsp; Search Job Title"
+                    title="Click To Search For Jobs"><i onclick="search()" class="material-icons search-icon">search</i>
+            </div>
+        </div>
+
+
+
+
+        <div id="viewer"></div>
+
+        <ul style="" id="myMenu" class="result-list animated slideInUp faster " style="list-style-type: none;text-decoration: none;">
+
+
+            <div id="items"></div>
+        </ul>
+
+        <script>function myFunction() {
+                var e, s, t;
+                for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
+            }</script>
+        <script>$('.search-input').keyup(function (e) {
+                if (e.keyCode === 13) {
+
+                    document.getElementsByClassName("result-list")[0].style.display = "block";
+                }
+            });
+
+        </script>
+        <script>
+            function search() {
+                document.getElementsByClassName("result-list")[0].style.display = "block";
+            }
+        </script>
+
+        <script>
+            AOS.init();
+        </script>
+  <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 300) {
+                $("#mySearch").addClass("active");
+            } else {
+                $("#mySearch").removeClass("active");
+            }
+        });
+
+    </script>
+    </section>
+</div>
+<div class="new-screen"></div>
+
+<div class="bottom-navigation">
+    <div class="nav-buttons">
+            <a href="#"><button autofocus><img src="Assets/home.svg"></button></a>
+            <a href="#"><button><img src="Assets/new.svg"></button></a>
+            <a href="#"><button><img src="Assets/saved.svg"></button></a>
+            <a href="#"><button><img src="Assets/about.svg"></button></a>
+    </div>
+    
+</div>
+</head>
