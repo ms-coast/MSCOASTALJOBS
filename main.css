@@ -1,10 +1,19 @@
 body {margin: 0px; padding: 0px; background-image: url(images/shipping\ container.webp);background-size: 1000px;;background-repeat: no-repeat;object-fit: cover; font-family: robtoto, sans-serif;}
 
-.background-image > img {width: 150%; height: 100%; position: fixed; z-index: -1; ;object-fit: cover;left: -180px;filter: brightness(0.6);}
+.background-image > img {width: 100%; height: 100%; position: fixed; z-index: -1; ;object-fit: cover;filter: brightness(0.6);left: 0px; top: 0px;}
 
 .logo-wrapper > img {width: 129px;margin-top: 30vh}
 
 .logo-wrapper {margin: auto; width: 129px;}
+
+a:active {outline: none;}
+
+a {text-decoration: none;-webkit-tap-highlight-color: transparent;}
+#mySearch {}
+
+#mySearch.active {box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.27);}
+
+.vertical-divider {height: 10px; background-color: black; opacity: 0.5;width: 1px;}
 
 /*------------------------------Search----------------------------------*/
 
@@ -12,11 +21,13 @@ body {margin: 0px; padding: 0px; background-image: url(images/shipping\ containe
 
 .search {margin: auto; width: 92%;}
 
-.search-input {width: 100%;height: 48px;border-radius: 12px;border: none;padding-left: 20px;}
+.search-input {width: 100%;height: 48px;border-radius: 12px;border: none;padding-left: 20px;position: sticky; top: 25px;}
+
+.search-wrapper {position: sticky; top: 20px;z-index: 50;;}
 
 .search-input:focus {outline: none;}
 
-.search-icon {float: right;margin-top: -35px;z-index: 10;position: relative;margin-right: 15px;}
+.search-icon {float: right;margin-top: -45px;z-index: 10;position: relative;margin-right: 5px;padding: 10px;padding-right: 15px; padding-left: 15px;}
 
 .result-element {background-color: white;width: 100%;border-radius: 12px;}
 
@@ -30,13 +41,25 @@ body {margin: 0px; padding: 0px; background-image: url(images/shipping\ containe
 
 details {padding: 17px;}
 
-summary > h3 {font-size: 16px;}
+details:focus {outline: none;}
 
-summary > h4 {font-size: 12px;font-weight: normal;margin-top: -10px;}
+summary:focus {outline: none;}
 
-summary > span {font-size: 10px;float:right;margin-right: 25px;}
+summary > h3 {font-size: 16px;color: black;float: left;width: 320px;margin-bottom: 1px;}
+
+summary > h4 {font-size: 12px;font-weight: normal;margin-top: -10px;color: black;text-align: left;width: 200px;}
+
+summary > span {font-size: 10px;margin-right: 25px;color: black;padding-right: 10px;width: 150px;float: left;}
+
+summary > p {font-size: 14px; color: black;}
+
+.result-expand > p {color: black;}
+
+.result-expand > label {color: black;font-weight: bold;}
 
 .result-li {margin-top: 20px;}
+
+
 
 details summary::-webkit-details-marker {
     background: url(/Assets/baseline-keyboard_arrow_down-24px.svg) center no-repeat;
@@ -48,3 +71,13 @@ details[open] summary::-webkit-details-marker {
     background: url(/Assets/baseline-keyboard_arrow_up-24px.svg) center no-repeat;
     color: transparent;
 }
+
+/*--------------------------------------Bottom-Navigation-----------------------------------*/
+
+.bottom-navigation {position: fixed; bottom: 0px; background-color: white; padding-top: 7px; padding-bottom: 7px; width: 100%; }
+
+.nav-buttons {margin: auto; width: 315px;}
+
+.nav-buttons > a > button {width:50px;margin-left: 16px;margin-top: 2px;filter: saturate(0);transition: 0.5s ease; background-color: white; border: none;}
+
+.nav-buttons > a > button:focus {filter: saturate(1);outline: none;}
