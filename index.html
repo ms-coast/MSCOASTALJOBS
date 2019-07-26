@@ -19,8 +19,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="Branding/favicon.png" />
     <script src="Script.js"></script>
-
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-5381330417949875",
+        enable_page_level_ads: true
+      });
+    </script>
 <script type="text/javascript" src="js/redirection-mobile.js"></script><script type="text/javascript">// <![CDATA[
  SA.redirection_mobile ({
  mobile_url : "m.mscoastaljobs.com",
@@ -75,11 +80,7 @@
     </script>
  
     <script id="item-template2" type="text/x-handlebars-template">
-        <div id="upload" class="fil-upload">
-            <div class="file-upload-container">
-                <iframe src="https://www.docdroid.net/"></iframe>
-            </div>
-        </div>
+   
         {{#each this}}
 <style>
 #{{jobID}} {display:none;opacity:0;transition:0.5s ease;}
@@ -138,7 +139,7 @@
                             <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactE-Mail}}" />
                             <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="JCN4EDEZR9JZ" />
                             <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
-                            <input id="skip_Subject" name="skip_Subject" type="hidden" value="Employment Application" />
+                            <input id="skip_Subject" name="skip_Subject" type="hidden" value="{{companyName}} Employment Application" />
                             <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
                             <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
                             <table border="0" cellpadding="5" cellspacing="0">
@@ -167,8 +168,8 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                <b>Upload Resume</b><br />
-                                <input class="input-styling" name="Portfolio" type="text" maxlength="255" value="" style="width:535px" />
+                                <b>Upload Resume</b><br/>
+                                <input class="input-styling" name="Resume" type="text" maxlength="255" value="" style="width:535px" />
                                 <h5 onclick="upload">Upload</h5>
                                 </td>
                                 </tr>
@@ -176,13 +177,13 @@
                           
                             <td style="width:50%">
                             <b>When can you start?</b><br />
-                            <input class="input-styling" name="StartDate" type="date" maxlength="50" style="width:245px" />
+                            <input class="input-styling" name="Start_Date" type="date" maxlength="50" style="width:245px" />
                             </td>
                             
                            
                             <td style="width:50%">
                             <b>Phone *</b><br />
-                            <input class="input-styling" name="Phone" type="text" maxlength="50" style="width:245px" />
+                            <input class="input-styling" name="Phone_Number" type="text" maxlength="50" style="width:245px" />
                             </td>
                           
                             </tr>
@@ -273,7 +274,7 @@
     </nav>
     
     <div class="spacer" style=""></div>
-    <ul id="show-items"></ul>
+<ul id="show-items"></ul>
     <div class="hero-text" id="hero-text">
         <h1>FIND A JOB IN HARRISON COUNTY, MISSISSIPPI</h1>
         <a href=""><p>By Harrison County Development Commission</p></a>
