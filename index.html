@@ -47,7 +47,7 @@
 <style>
 </style>
         {{#each this}}
-        <li class="result-li" style="list-style-type:none;"><a  href="#{{jobID}}">
+        <li class="result-li" style="list-style-type:none;">
             <details>
            <summary>
             <h3>
@@ -85,44 +85,46 @@
         <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
         <table border="0" cellpadding="5" cellspacing="0">
         <tr>
-        <td style="width:50%">
+        <td>
         <b>First name *</b><br />
         <input class="input-styling" name="First_Name" type="text" maxlength="50" style="width:245px" />
         </td>
-        
-        <td style="width:50%">
+        <br>
+    </tr>
+    <tr>
+        <td >
         <b>Last name *</b><br />
         <input class="input-styling" name="Last_Name" type="text" maxlength="50" style="width:245px" />
         </td>
-        </tr>
+    </tr>
         <tr>
-        <td colspan="2">
+        <td>
         <b>Email *</b><br />
-        <input class="input-styling" name="Email_Address" type="email" maxlength="100" style="width:535px" />
+        <input class="input-styling" name="Email_Address" type="email" maxlength="100" style="width:245px" />
         </td>
         </tr>
         <tr>
-        <td colspan="2">
+        <td>
         <b>Portfolio website</b><br />
-        <input class="input-styling" name="Portfolio" type="url" maxlength="255" value="https://" style="width:535px" />
+        <input class="input-styling" name="Portfolio" type="url" maxlength="255" value="https://" style="width:245px" />
         </td>
         </tr>
         <tr>
             <td colspan="2">
             <b>Upload Resume</b><br/>
-            <input class="input-styling" name="Resume" type="text" maxlength="255" value="" style="width:535px" />
+            <input class="input-styling" name="Resume" type="text" maxlength="255" value="" style="width:245px" />
             <h5 onclick="upload">Upload</h5>
             </td>
             </tr>
         <tr>
       
-        <td style="width:50%">
+        <td style="width:100%">
         <b>When can you start?</b><br />
         <input class="input-styling" name="Start_Date" type="date" maxlength="50" style="width:245px" />
         </td>
-        
-       
-        <td style="width:50%">
+    </tr>
+       <tr>
+        <td >
         <b>Phone *</b><br />
         <input class="input-styling" name="Phone_Number" type="text" maxlength="50" style="width:245px" />
         </td>
@@ -139,13 +141,13 @@
         <tr>
         <td colspan="2">
         <b>Last company you worked for</b><br />
-        <input class="input-styling" name="Organization" type="text" maxlength="100" style="width:535px" />
+        <input class="input-styling" name="Organization" type="text" maxlength="100" style="width:245px" />
         </td>
         </tr>
         <tr>
         <td colspan="2">
         <b>Reference / Comments / Questions</b><br />
-        <textarea name="Reference" rows="7" cols="40" style="width:535px"></textarea>
+        <textarea name="Reference" rows="7" cols="40" style="width:245px"></textarea>
         </td>
         </tr>
         </table>
@@ -179,7 +181,7 @@
         </div>
         </form>
 </details>
-</a>
+
 </li>
 
         {{/each}}
@@ -194,8 +196,8 @@
     </script>
 
     <div class="homescreen">
-    <div class="background-image"><img src="images/shipping container.webp"></div>
-    <div class="logo-wrapper"><img src="branding/ms coastal jobs7w.png"></div>
+    <div class="background-image"><img src="images/shipping container.jpg"></div>
+    <div class="logo-wrapper"><img src="branding/mscoastal jobs7w.png"></div>
     <section class="search" id="main-search">
         <div class="search-wrapper">
             <div class="search-input-container"> <input autocomplete="off" autofocus class="search-input" type="search"
