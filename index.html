@@ -76,6 +76,108 @@
         <label>About Us</label>
         <p>{{jobDescription}}</p>
     </div>
+    <form style="padding-bottom:150px;" action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+        <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactE-Mail}}" />
+        <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="JCN4EDEZR9JZ" />
+        <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="application-complete.html" />
+        <input id="skip_Subject" name="skip_Subject" type="hidden" value="{{companyName}} Employment Application" />
+        <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+        <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
+        <table border="0" cellpadding="5" cellspacing="0">
+        <tr>
+        <td style="width:50%">
+        <b>First name *</b><br />
+        <input class="input-styling" name="First_Name" type="text" maxlength="50" style="width:245px" />
+        </td>
+        
+        <td style="width:50%">
+        <b>Last name *</b><br />
+        <input class="input-styling" name="Last_Name" type="text" maxlength="50" style="width:245px" />
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Email *</b><br />
+        <input class="input-styling" name="Email_Address" type="email" maxlength="100" style="width:535px" />
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Portfolio website</b><br />
+        <input class="input-styling" name="Portfolio" type="url" maxlength="255" value="https://" style="width:535px" />
+        </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <b>Upload Resume</b><br/>
+            <input class="input-styling" name="Resume" type="text" maxlength="255" value="" style="width:535px" />
+            <h5 onclick="upload">Upload</h5>
+            </td>
+            </tr>
+        <tr>
+      
+        <td style="width:50%">
+        <b>When can you start?</b><br />
+        <input class="input-styling" name="Start_Date" type="date" maxlength="50" style="width:245px" />
+        </td>
+        
+       
+        <td style="width:50%">
+        <b>Phone *</b><br />
+        <input class="input-styling" name="Phone_Number" type="text" maxlength="50" style="width:245px" />
+        </td>
+      
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Are you willing to relocate?</b><br />
+        <input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes &nbsp; &nbsp; &nbsp;
+        <input name="Relocate" type="radio" value="No" /> No &nbsp; &nbsp; &nbsp;
+        <input name="Relocate" type="radio" value="NotSure" /> Not sure
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Last company you worked for</b><br />
+        <input class="input-styling" name="Organization" type="text" maxlength="100" style="width:535px" />
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Reference / Comments / Questions</b><br />
+        <textarea name="Reference" rows="7" cols="40" style="width:535px"></textarea>
+        </td>
+        </tr>
+        </table>
+        <br />
+        <div style="text-align:center;">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
+        <tr><td colspan="2" style="padding-bottom:18px;">
+        <!-- Please check our ProCaptcha service which is ad-free:
+        https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+        <a href="http://www.snaphost.com/captcha" alt="captcha verification" title="captcha verification">
+        captcha verification</a></td></tr>
+        <tr>
+        <td><i>Enter security code</i></td>
+        <td>SECURITY CODE</td>
+        </tr>
+        <tr>
+        <td>
+        <input class="input-styling" name="skip_CaptchaCode" type="text" maxlength="6"
+        style="width:130px; height:28px; font-size:24px; text-align:center;" />
+        </td>
+        <td>
+        <a href="https://www.snaphost.com/captcha/ReadyForms/EmploymentApplicationForm.aspx"><img id="CaptchaImage" alt="Employment Application form" title="HTML code for Employment Application web form"
+        style="margin-left:20px; border:1px solid #999999;"
+        src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=JCN4EDEZR9JZ&ImgType=2" /></a>
+        <br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');" target="_blank"><span style="font-size:12px;">reload image</span></a>
+        </td>
+        </tr>
+        </table>
+        <br /><br />
+        <input style="background-color: white; border:solid; border-width: 1px; border-color:lightgray;" name="skip_Submit" type="submit" value="Send Application" />
+        </div>
+        </form>
 </details>
 </a>
 </li>
@@ -121,11 +223,9 @@
             }</script>
         <script>$('.search-input').keyup(function (e) {
                 if (e.keyCode === 13) {
-
                     document.getElementsByClassName("result-list")[0].style.display = "block";
                 }
             });
-
         </script>
         <script>
             function search() {
@@ -145,7 +245,6 @@
                 $("#mySearch").removeClass("active");
             }
         });
-
     </script>
     </section>
     <div class="spacer"></div>
