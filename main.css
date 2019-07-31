@@ -19,7 +19,7 @@ a {text-decoration: none;-webkit-tap-highlight-color: transparent;}
 
 /*------------------------------Search----------------------------------*/
 
-.result-list {display: none;}
+.result-list {display: none;transform: rotateZ(180deg);}
 
 .search {margin: auto; width: 92%;}
 
@@ -33,7 +33,7 @@ a {text-decoration: none;-webkit-tap-highlight-color: transparent;}
 
 .result-element {background-color: white;width: 100%;border-radius: 12px;}
 
-.result-list {padding-left: 0px;}
+.result-list {padding-left: 0px;transform: rotateZ(180deg);}
 
 .full-results {background-color: white;}
 
