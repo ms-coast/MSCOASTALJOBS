@@ -1,6 +1,6 @@
 nav {position: absolute; left: 0px; top: 0px;  width: 100%; background-color: transparent;z-index:101;height: 75px;}
 
-body {margin: 0px; padding: 0px; font-family:roboto, sans-serif;background-image: url(images/shipping\ container.webp); background-repeat: no-repeat; background-size: cover;background-attachment: fixed; scroll-behavior: smooth }
+body {margin: 0px; padding: 0px; font-family:roboto, sans-serif;background-image: url(images/shipping\ container.jpg); background-repeat: no-repeat; background-size: cover;background-attachment: fixed; scroll-behavior: smooth }
 
 html {scroll-behavior: smooth}
 
@@ -44,7 +44,7 @@ nav > ul > li > a:hover {font-size: 15px;color: white;}
 .active-btn {color: white; font-size: 15px;}
 
 /*--------------------------------------------Search-------------------------------------------------------*/
-.search-wrapper {position: sticky; top: 0px;z-index:60;}
+.search-wrapper {position: sticky; top: 0px;z-index:60;position: -webkit-sticky;}
 
 .sort-options {border-radius: 40px;border: solid;border-color: lightgray; border-width: 1px;margin-left: 10px;}
 
@@ -81,6 +81,7 @@ ul {padding: 0px;margin: 0px;}
 
 .search {margin: auto; margin-top: 40vh;border-radius: 10px;padding-bottom: 60px;}
 
+
 .search-items > h3 {font-size: 11px;font-weight: normal;text-align: left; }
 
 .search-items > h4 {font-weight: normal ;margin-top: -10px;text-align: left;}
@@ -109,6 +110,7 @@ ul {padding: 0px;margin: 0px;}
 #colored-l {display: block}
 
 #colored-l.sm {display: none;margin-top: -50px;}
+
 /*-------------------------------------------------------Hero Section----------------------------------------------------------------*/
 
 .hero-text {position: fixed; left: 50px; ;width: 600px;z-index: -1;}
@@ -161,6 +163,20 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 .sub-label {font-size: 14px;color: rgb(104, 104, 104); }
 
 .post-menu {border: solid; border-width: 1px; border-color: lightgray;height: 25px;border-radius: 5px; margin-top: 10px;margin-bottom: 10px;}
+
+.complete {margin: auto; width: 350px; }
+
+.complete > h4 {text-align: center; }
+
+.complete > p {text-align: center;margin-top: -10px; font-size: 14px;margin-top: -15px;}
+
+.complete-button-container {margin: auto; width: 150px;border: none; }
+
+.complete-button-container > a > button {background-color: white;border: solid;border-width: 1px;border-color: lightgray;border-radius: 5px;}
+
+.complete-button-container > a > button:focus {outline: none; }
+
+.complete-button-container > a > button:hover {cursor: pointer;}
 /*------------------------------------------------------Job Menu--------------------------------------------------------------------------*/
 .job-menu {    position: absolute;;
   ; background-color: green;;width: 0px; height: 100%;opacity: 0;transition: 0.5s ease;transition-delay: 150ms;z-index: 200;top: 0px;;}
@@ -174,7 +190,7 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 
     .job-element-container::-webkit-scrollbar{width: 0px;}
 
-.job-top {margin-top: 0px;width: 100.5%;margin-left: -1px;padding: 20px;padding-bottom: 80px;padding-top: 10px;}
+.job-top {margin-top: 0px;margin-left: -1px;padding: 20px;padding-bottom: 80px;padding-top: 10px;position: sticky; top:-75px;background-color: white;border-radius: 10px;z-index:150;}
 
 .job-button {background-color: white; border: solid; border-width: 1px; border-color: lightgray;border-radius: 4px;}
 
@@ -182,7 +198,7 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 
 .job-logo {width:170px; height: 210px;background-color: white; border-radius: 10px;float: left;margin-top: 160px;margin-left: 50px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12);object-fit: contain;}
 
-.close-button {color: black; margin-top: 20px;float: right;margin-right: 15px;;}
+.close-button {color: black; margin-top: 30px;float: right;position: sticky; z-index: 200;margin-right: 30px;;}
 
 .job-top > h3 {font-size:16px;color: black;font-weight: bold;margin-bottom: -7px;float: left;}
 

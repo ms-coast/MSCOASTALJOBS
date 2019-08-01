@@ -135,10 +135,10 @@
 
 
                             <hr />
-                            <form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+                            <form style="padding-bottom:20px;" action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
                             <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactE-Mail}}" />
                             <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="JCN4EDEZR9JZ" />
-                            <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
+                            <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="application-complete.html" />
                             <input id="skip_Subject" name="skip_Subject" type="hidden" value="{{companyName}} Employment Application" />
                             <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
                             <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
@@ -169,8 +169,8 @@
                             <tr>
                                 <td colspan="2">
                                 <b>Upload Resume</b><br/>
-                                <input class="input-styling" name="Resume" type="text" maxlength="255" value="" style="width:535px" />
-                                <h5 onclick="upload">Upload</h5>
+                                <input class="input-styling" name="Resume" type="file" maxlength="255" value="" style="width:535px" />
+                                
                                 </td>
                                 </tr>
                             <tr>
@@ -234,7 +234,7 @@
                             </tr>
                             </table>
                             <br /><br />
-                            <input name="skip_Submit" type="submit" value="Send Application" />
+                            <input style="background-color: white; border:solid; border-width: 1px; border-color:lightgray;" name="skip_Submit" type="submit" value="Send Application" />
                             </div>
                             </form>
 
@@ -292,7 +292,7 @@
 
 <div id="viewer"></div>
 
-        <ul style="" id="myMenu" class="result-list animated slideInUp faster " style="padding-left-start {0px;}">
+        <ul style="display: block" id="myMenu" class="result-list animated slideInUp faster " style="padding-left-start {0px;}">
 
             <div class="sort-elements"><select class="sort-options">
                     <option selected>Sort By Profession</option>
