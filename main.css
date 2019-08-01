@@ -88,7 +88,7 @@ ul {padding: 0px;margin: 0px;}
 
 .search-items > p {font-weight: normal; font-size: 12px;margin-top: -20px; ;}
 
-.search-items {text-decoration: none; color: black; text-decoration: none;list-style-type: none;margin: auto;: 5px;padding:10px;transition:0.2s ease;}
+.search-items {text-decoration: none; color: black; text-decoration: none;list-style-type: none;margin: auto;: 5px;padding:10px;transition:0.2s ease;border-radius: 5px; }
 
 .search-items:hover {background-color:lightgray}
 
