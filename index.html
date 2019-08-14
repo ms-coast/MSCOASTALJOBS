@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html  lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>MS Coastal Jobs</title>
     <link rel="stylesheet" href="main.css">
+       <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+       <!-- Compiled and minified JavaScript -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+               
     <meta name="description"
         content="We empower businesses and hard-working members of our community by connecting people with businesses.">
     <meta name="keywords"
@@ -194,75 +200,85 @@
         {{/each}}
     
     </script>
-
+<style>
+ input[type=search]:not(.browser-default){width: 95%;height: 48px;border-radius: 12px;border: none;position: sticky; top: 25px;position: -webkit-sticky; !important;background-color:white;padding-left:20px; }
+</style>
     <div class="homescreen">
-    <div class="background-image"><img src="images/shipping container.jpg"></div>
-    <div class="logo-wrapper"><img src="branding/mscoastal jobs7w.png"></div>
-    <section class="search" id="main-search">
-        <div class="search-wrapper">
-            <div class="search-input-container"> <input autocomplete="off" autofocus class="search-input" type="search"
-                    id="mySearch" onkeyup="myFunction()" placeholder="&emsp; Search Job Title"
-                    title="Click To Search For Jobs"><i onclick="search()" class="material-icons search-icon">search</i>
+        <div class="background-image"><img src="images/shipping container.jpg"></div>
+        <div class="logo-wrapper"><img src="branding/mscoastal jobs7w.png"></div>
+        <section class="search" id="main-search">
+            <div class="search-wrapper">
+                <div class="search-input-container"> <input autocomplete="off" autofocus class="search-input"
+                        type="search" id="mySearch" onkeyup="myFunction()" placeholder="&emsp; Search Job Title"
+                        title="Click To Search For Jobs"><i onclick="search()"
+                        class="material-icons search-icon">search</i>
+                </div>
+               
             </div>
-        </div>
 
 
 
 
-        <div id="viewer"></div>
+            <div id="viewer"></div>
 
-        <ul style="transform: rotateZ(180deg);" id="myMenu" class="result-list animated slideInUp faster " style="list-style-type: none;text-decoration: none;">
+            <ul style="transform: rotateZ(180deg);" id="myMenu" class="result-list animated slideInUp faster "
+                style="list-style-type: none;text-decoration: none;">
 
 
-            <div id="items" style="transform: rotateZ(180deg);"></div>
-        </ul>
+                <div id="items" style="transform: rotateZ(180deg);"></div>
+            </ul>
 
-        
 
-        <script>function myFunction() {
-                var e, s, t;
-                for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
-            }</script>
-        <script>$('.search-input').keyup(function (e) {
-                if (e.keyCode === 13) {
+
+            <script>function myFunction() {
+                    var e, s, t;
+                    for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
+                }</script>
+            <script>$('.search-input').keyup(function (e) {
+                    if (e.keyCode === 13) {
+                        document.getElementsByClassName("result-list")[0].style.display = "block";
+                    }
+                });
+            </script>
+            <script>
+                function search() {
                     document.getElementsByClassName("result-list")[0].style.display = "block";
                 }
-            });
-        </script>
-        <script>
-            function search() {
-                document.getElementsByClassName("result-list")[0].style.display = "block";
-            }
-        </script>
+            </script>
 
-        <script>
-            AOS.init();
-        </script>
-  <script>
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            if (scroll > 300) {
-                $("#mySearch").addClass("active");
-            } else {
-                $("#mySearch").removeClass("active");
-            }
-        });
-    </script>
-    </section>
-    <div class="spacer"></div>
-</div>
-<div id="new-screen"><h1>New Page</h1></div>
-
-<div id="saved-screen"><h1>Saved Page</h1></div>
-
-<div id="about-screen"><h1>About Page</h1></div>
-<div class="bottom-navigation">
-    <div class="nav-buttons">
-            <a href="#"><button autofocus><img src="Assets/home.svg"></button></a>
-            <a href="#new-screen"><button><img src="Assets/new.svg"></button></a>
-            <a href="#saved-screen"><button><img src="Assets/saved.svg"></button></a>
-            <a href="#about-screen"><button><img src="Assets/about.svg"></button></a>
+            <script>
+                AOS.init();
+            </script>
+            <script>
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 300) {
+                        $("#mySearch").addClass("active");
+                    } else {
+                        $("#mySearch").removeClass("active");
+                    }
+                });
+            </script>
+        </section>
+        <div class="spacer"></div>
     </div>
-    
-</div>
+    <div id="new-screen">
+        <h1>New Page</h1>
+    </div>
+
+    <div id="saved-screen">
+        <h1>Saved Page</h1>
+    </div>
+
+    <div id="about-screen">
+        <h1>About Page</h1>
+    </div>
+    <div class="bottom-navigation">
+        <div class="nav-buttons">
+            <a href="#"><button autofocus><img src="Assets/home.svg"></button></a>
+           
+            <a href="#about-screen"><button><img src="Assets/about.svg"></button></a>
+        </div>
+
+    </div>
 </head>
