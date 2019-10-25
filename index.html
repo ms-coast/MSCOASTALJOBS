@@ -17,7 +17,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="Branding/favicon.png" />
+    <link rel="shortcut-icon" href="branding/favicon.png" />
     <script src="Script.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -55,7 +55,7 @@
         })
     </script>
     <script id="item-template" type="text/x-handlebars-template">
-
+<div class="spacer"></div>
         {{#each this}}
 
 
@@ -138,26 +138,27 @@
                             <form style="padding-bottom:20px;" action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
                             <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactE-Mail}}" />
                             <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="JCN4EDEZR9JZ" />
-                            <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="application-complete.html" />
-                            <input id="skip_Subject" name="skip_Subject" type="hidden" value="{{companyName}} Employment Application" />
+                            <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://www.mscoastaljobs.com/application-complete.html" />
+                            <input id="skip_Subject" name="skip_Subject" type="hidden" value="{{jobPosition}} Employment Application" />
                             <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
                             <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
                             <table border="0" cellpadding="5" cellspacing="0">
                             <tr>
                             <td style="width:50%">
                             <b>First name *</b><br />
-                            <input class="input-styling" name="First_Name" type="text" maxlength="50" style="width:245px" />
+                            
+                            <input class="input-styling" name="" type="text" maxlength="50" style="width:245px" />
                             </td>
                             
                             <td style="width:50%">
                             <b>Last name *</b><br />
-                            <input class="input-styling" name="Last_Name" type="text" maxlength="50" style="width:245px" />
+                            <input class="input-styling" name="" type="text" maxlength="50" style="width:245px" />
                             </td>
                             </tr>
                             <tr>
                             <td colspan="2">
                             <b>Email *</b><br />
-                            <input class="input-styling" name="Email_Address" type="email" maxlength="100" style="width:535px" />
+                            <input class="input-styling" name="Email Address" type="email" maxlength="100" style="width:535px" />
                             </td>
                             </tr>
                             <tr>
@@ -177,13 +178,13 @@
                           
                             <td style="width:50%">
                             <b>When can you start?</b><br />
-                            <input class="input-styling" name="Start_Date" type="date" maxlength="50" style="width:245px" />
+                            <input class="input-styling" name="Start Date" type="date" maxlength="50" style="width:245px" />
                             </td>
                             
                            
                             <td style="width:50%">
                             <b>Phone *</b><br />
-                            <input class="input-styling" name="Phone_Number" type="text" maxlength="50" style="width:245px" />
+                            <input class="input-styling" name="Phone Number" type="text" maxlength="50" style="width:245px" />
                             </td>
                           
                             </tr>
@@ -212,8 +213,7 @@
                             <div style="text-align:center;">
                             <table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
                             <tr><td colspan="2" style="padding-bottom:18px;">
-                            <!-- Please check our ProCaptcha service which is ad-free:
-                            https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+                            
                             <a href="http://www.snaphost.com/captcha" alt="captcha verification" title="captcha verification">
                             captcha verification</a></td></tr>
                             <tr>
