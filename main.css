@@ -23,7 +23,7 @@ a {text-decoration: none;-webkit-tap-highlight-color: transparent;}
 
 
 
-.result-list {display: none;transform: rotateZ(180deg);}
+.result-list {transform: rotateZ(180deg);}
 
 .search {margin: auto; width: 92%;}
 
@@ -91,7 +91,7 @@ details[open] summary::-webkit-details-marker {
 
 .nav-buttons {margin: auto; width: 315px;}
 
-.nav-buttons > a > button {width:50px;margin-left: 60px;margin-top: 2px;filter: saturate(0);transition: 0.5s ease; background-color: white; border: none;}
+.nav-buttons > a > button {width:50px;margin-left: 60px;margin-top: 2px;;transition: 0.5s ease; background-color: white; border: none;}
 
 .nav-buttons > a > button:focus {filter: saturate(1);outline: none;}
 
@@ -106,7 +106,7 @@ details[open] summary::-webkit-details-marker {
 
 #about-screen {display: none;background-color: white;position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 100;}
 
-#about-screen:target {display: block; }
+#about-screen:target {display: block; a}
 
 #about-screen {display: none; }
 
