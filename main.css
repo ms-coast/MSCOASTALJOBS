@@ -22,7 +22,7 @@ a {text-decoration: none;-webkit-tap-highlight-color: transparent;}
 /*------------------------------Search----------------------------------*/
 
 
-
+b {color: black !important;}
 .result-list {transform: rotateZ(180deg);}
 
 .search {margin: auto; width: 92%;}
@@ -87,7 +87,8 @@ details[open] summary::-webkit-details-marker {
 
 /*--------------------------------------Bottom-Navigation-----------------------------------*/
 
-.bottom-navigation {position: fixed; bottom: 0px; background-color: white; padding-top: 5px; padding-bottom: 5px; width: 100%;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.27);z-index: 105;}
+
+.bottom-navigation {position: fixed; bottom: 0px; background-color: white; padding-top: 5px; padding-bottom: 5px; width: 100%;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.27);z-index: 105;display: none;}
 
 .nav-buttons {margin: auto; width: 315px;}
 
