@@ -33,41 +33,42 @@
           <div class="micro-spacer"></div>
           <label>Basic Information</label>
           
-          <input class="post-input-left" placeholder="Job Position" title="Job Position" name="entry.1851494288" >
+          <input class="post-input-left" placeholder="Job Position*" title="Job Position" name="entry.1851494288" required >
           
           <select class="post-menu" name="entry.1918061595" required>
-              <option value="" default >Job Type</option>
+              <option value="" disabled selected>Job Type</option>
               <option value="Internship">Internship</option>
               <option value="Part-Time">Part-Time</option>
               <option value="Full-Time">Full-Time</option>
             
             </select>
           
-          <textarea placeholder="Job Description" title="Job Description" name="entry.1444038292"></textarea>
+          <textarea placeholder="Job Description*" title="Job Description" name="entry.1444038292" required></textarea>
           <textarea placeholder="Requirements" title="Requirements" name ="entry.1380713551"></textarea>
           <textarea placeholder="About Your Business" title="About Your Business" name ="entry.723602998"></textarea>
        
-          <textarea class="post-input-left" id='foo' readonly="readonly" style="display: none;" title="Job ID (DO NOT EDIT)" name="entry.2100899197"></textarea>
-          <textarea class="post-input-left" id='foo2' readonly="readonly" style="display: none;" title="Job ID (DO NOT EDIT)" name="entry.491820168"></textarea>
-          <textarea  class="post-input-left" id='foo3' readonly="readonly" style="display: none;" title="Apply ID (DO NOT EDIT)" name="entry.1979692715"></textarea>
-               
+          <textarea type="hidden" class="post-input-left" id='foo' readonly="readonly" style="display: none;" title="Job ID (DO NOT EDIT)" name="entry.2100899197"></textarea>
+          <textarea type="hidden" class="post-input-left" id='foo2' readonly="readonly" style="display: none;" title="Job ID (DO NOT EDIT)" name="entry.491820168"></textarea>
+          <textarea type="hidden"  class="post-input-left" id='foo3' readonly="readonly" style="display: none;" title="Apply ID (DO NOT EDIT)" name="entry.1979692715"></textarea>
+           <input type="hidden" value="Ums385job" name="entry.2130818562" required readonly>    
     
         </div>
         <div class="right-sect">
          <div class="micro-spacer"></div>
          
           <label>Business Info</label>
-        
+      
           <input class="post-input-left" placeholder="Company Name*" title="Company Title" name="entry.1591963288" >
-          <input type="email" class="post-input-left input-forths" placeholder="E-Mail" title="Contact E-Mail" name="entry.287525031">
-          <input type="tel" class="post-input-left input-forths" placeholder="Phone Number" title="Contact E-Mail" name="entry.749797135">
-          <input type="text" class="post-input-left input-forths" placeholder="Business Address" title="Contact E-Mail" name="entry.381510034">
+          <input type="email" class="post-input-left input-forths" placeholder="E-Mail*" title="Contact E-Mail" name="entry.287525031" required>
+          <input type="tel" class="post-input-left input-forths" placeholder="Phone Number" title="Phone Number" name="entry.749797135">
+          <input type="text" class="post-input-left input-forths" placeholder="Business Address" title="Business Address" name="entry.381510034">
           <input class="post-input-right" placeholder="Website Link" title="Website" name="entry.995797270">
           <div class="micro-spacer"></div>
           <label>Meta Data</label>
+          <input type="password" class="post-input-left" placeholder="CMS Password* (Required To Make Changes Later)" title="CMS ID" name="entry.1866560016" required>
           <input class="post-input-left" placeholder="Key Word Tags (Separated By Comma)" title="Key Word Tags (Separated By Comma)" maxlength = "40" name="entry.2028903208">
-          <select class="post-menu" name="entry.407655906">
-              <option default>City</option>
+          <select required class="post-menu" name="entry.407655906">
+              <option disabled selected>City</option>
             <option>Gulfport</option>
             <option>Biloxi</option>
             <option>Pass Christian</option>
