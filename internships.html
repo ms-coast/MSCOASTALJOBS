@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>MS Coastal Jobs</title>
+    <link rel="stylesheet" href="main.css">
+       <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+       <!-- Compiled and minified JavaScript -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+               
+    <meta name="description"
+        content="We empower businesses and hard-working members of our community by connecting people with businesses.">
+    <meta name="keywords"
+        content="Harrison County, Mississippi Jobs, Gulfcoast Jobs, Gulfport Jobs, Longbeach Jobs, Biloxi Jobs, Industrial Jobs, ">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Branding/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <script src="Script.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5381330417949875",
+            enable_page_level_ads: true
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/17a8d6e0-1c89-47ef-9acd-34a07b65659c', function (data) {
+                var template = Handlebars.compile($('#item-template').html())
+                $('#items').html(template(data))
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/17a8d6e0-1c89-47ef-9acd-34a07b65659c', function (data) {
+                var template = Handlebars.compile($('#item-template2').html())
+                $('#viewer').html(template(data))
+            })
+        })
+    </script>
+    <script id="item-template" type="text/x-handlebars-template">
+<style>
+</style>
+        {{#each this}}
+        <li class="result-li" style="list-style-type:none; transform: rotateZ(180deg);">
+            <a>
+            <details>
+           <summary>
+            <h3 style="width: 90%;">
+                    {{jobPosition}}
+            </h3>
+
+            <span>
+{{pay}}
+</span>
+         
+            <h4>
+{{companyName}}
+            </h4>
+            <p>
+{{jobDescription}}
+            </p>
+        </div>
+    </summary>
+   
+
+    <div class="result-expand animated fadeIn"  id="{{jobID}}" >
+       
+        <div class="spacer"></div>
+        <label>Job Requirements</label>
+        <p>{{jobDescription}}</p>
+        <div class="spacer"></div>
+        <label>About Us</label>
+        <p>{{aboutYourBusiness}}</p>
+    </div>
+    <form style="padding-bottom:25px;" action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+        <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactE-Mail}}" />
+        <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="JCN4EDEZR9JZ" />
+        <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="application-complete.html" />
+        <input id="skip_Subject" name="skip_Subject" type="hidden" value="{{companyName}} Employment Application" />
+        <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+        <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
+        <table border="0" cellpadding="5" cellspacing="0">
+        <tr>
+        <td>
+        <b>First name *</b><br />
+        <input class="input-styling" name="First_Name" type="text" maxlength="50" style="width:245px" />
+        </td>
+        <br>
+    </tr>
+    <tr>
+        <td >
+        <b>Last name *</b><br />
+        <input class="input-styling" name="Last_Name" type="text" maxlength="50" style="width:245px" />
+        </td>
+    </tr>
+        <tr>
+        <td>
+        <b>Email *</b><br />
+        <input class="input-styling" name="Email_Address" type="email" maxlength="100" style="width:245px" />
+        </td>
+        </tr>
+        <tr>
+      
+        <td style="width:100%">
+        <b>When can you start?</b><br />
+        <input class="input-styling" name="Start_Date" type="date" maxlength="50" style="width:245px" />
+        </td>
+    </tr>
+       <tr>
+        <td >
+        <b>Phone *</b><br />
+        <input class="input-styling" name="Phone_Number" type="text" maxlength="50" style="width:245px" />
+        </td>
+      
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Are you willing to relocate?</b><br />
+        <input style=" color:#012395 !important;" name="Relocate" type="radio" value="Yes" checked="checked" /> Yes &nbsp; &nbsp; &nbsp;
+        <input style=" color:#012395 !important;" name="Relocate" type="radio" value="No" /> No &nbsp; &nbsp; &nbsp;
+        <input style=" color:#012395 !important;" name="Relocate" type="radio" value="NotSure" /> Not sure
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Last company you worked for</b><br />
+        <input class="input-styling" name="Organization" type="text" maxlength="100" style="width:245px" />
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <b>Reference / Comments / Questions</b><br />
+        <textarea name="Reference" rows="7" cols="40" style="width:245px"></textarea>
+        </td>
+        </tr>
+        </table>
+        <br />
+        <div style="text-align:center;">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
+        <tr><td colspan="2" style="padding-bottom:18px;">
+        <!-- Please check our ProCaptcha service which is ad-free:
+        https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+        <a style="color: black !important;" href="http://www.snaphost.com/captcha" alt="captcha verification" title="captcha verification">
+        captcha verification</a></td></tr>
+        <tr>
+        <td><i style="color: white;">Enter security code</i></td>
+        <td style="color: white;">SECURITY CODE</td>
+        </tr>
+        <tr>
+        <td>
+        <input class="input-styling" name="skip_CaptchaCode" type="text" maxlength="6"
+        style="width:130px; height:28px; font-size:24px; text-align:center;" />
+        </td>
+        <td>
+        <a href="https://www.snaphost.com/captcha/ReadyForms/EmploymentApplicationForm.aspx"><img id="CaptchaImage" alt="Employment Application form" title="HTML code for Employment Application web form"
+        style="margin-left:20px; border:1px solid #999999;"
+        src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=JCN4EDEZR9JZ&ImgType=2" /></a>
+        <br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');" target="_blank"><span style="font-size:12px;">reload image</span></a>
+        </td>
+        </tr>
+        </table>
+        <br /><br />
+        <input style="background-color: white; border:solid; border-width: 1px; border-color:lightgray;" name="skip_Submit" type="submit" value="Send Application" />
+        </div>
+        </form>
+</details>
+</a>
+</li>
+
+        {{/each}}
+    
+    </script>
+    <script id="item-template2" type="text/x-handlebars-template">
+
+        {{#each this}}
+
+        {{/each}}
+    
+    </script>
+<style>
+ input[type=search]:not(.browser-default){width: 95%;height: 48px;border-radius: 12px;border: none;position: sticky; top: 25px;position: -webkit-sticky; !important;background-color:white;padding-left:20px; }
+</style>
+    <div class="homescreen">
+        <div class="background-image"><img src="images/shipping container.jpg"></div>
+        <div class="logo-wrapper"><img src="branding/mscoastal jobs7w.png"></div>
+        <section class="search" id="main-search">
+            <div class="search-wrapper">
+                <div class="search-input-container"> <input autocomplete="off" autofocus class="search-input"
+                        type="search" id="mySearch" value="internship" onkeyup="myFunction()" placeholder="&emsp; Search Job Title"
+                        title="Click To Search For Jobs"><i onclick="search()"
+                        class="material-icons search-icon">search</i>
+                </div>
+               
+            </div>
+
+
+
+
+            <div id="viewer"></div>
+
+            <ul style="transform: rotateZ(180deg);" id="myMenu" class="result-list animated slideInUp faster "
+                style="list-style-type: none;text-decoration: none;">
+
+
+                <div id="items" style="transform: rotateZ(180deg);"></div>
+            </ul>
+
+
+
+            <script>function myFunction() {
+                    var e, s, t;
+                    for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
+                }
+                
+                function foo() {
+                myFunction()
+                setTimeout(foo, 100);
+            }
+            foo();
+                </script>
+            <script>$('.search-input').keyup(function (e) {
+                    if (e.keyCode === 13) {
+                        document.getElementsByClassName("result-list")[0].style.display = "block";
+                    }
+                });
+            </script>
+            <script>
+                function search() {
+                    document.getElementsByClassName("result-list")[0].style.display = "block";
+                }
+            </script>
+
+            <script>
+                AOS.init();
+            </script>
+            <script>
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+                    if (scroll > 300) {
+                        $("#mySearch").addClass("active");
+                    } else {
+                        $("#mySearch").removeClass("active");
+                    }
+                });
+            </script>
+        </section>
+        <div class="spacer"></div>
+    </div>
+    <div id="new-screen">
+        <h1>New Page</h1>
+    </div>
+
+    <div id="saved-screen">
+        <h1>Saved Page</h1>
+    </div>
+
+    <div id="about-screen">
+        <h1>About Page</h1>
+    </div>
+    <div class="bottom-navigation">
+        <div class="nav-buttons">
+            <a href="#"><button autofocus><img src="Assets/home.svg"></button></a>
+           
+            <a href="#about-screen"><button><img src="Assets/about.svg"></button></a>
+        </div>
+
+    </div>
+</head>
