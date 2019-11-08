@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>MS Coastal Jobs</title>
@@ -13,27 +13,37 @@
     <meta name="language" content="English">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+    </script>
+    <link rel="stylesheet" href="vivify.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="Branding/favicon.png" />
+    <link rel="shortcut icon" href="branding/favicon.png" />
     <script src="Script.js"></script>
-    <script language="Javascript" type="text/javascript"
-    src="https://pub31.bravenet.com/passwd/jsnorightclick.php?usernum=2600626585"></script>
-<script language="Javascript" type="text/javascript"
-    src="https://pub31.bravenet.com/passwd/jsverify.php?usernum=2600626585"></script>
-<noscript>
-    <meta http-equiv="refresh" content="0; url=https://pub31.bravenet.com/passwd/verify.php?usernum=2600626585" />
-
-<body style="display:none;">
-</noscript>
+    <script data-ad-client="ca-pub-5381330417949875" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-5381330417949875",
-          enable_page_level_ads: true
+            google_ad_client: "ca-pub-5381330417949875",
+            enable_page_level_ads: true
         });
-      </script>
+    </script>
+    <script type="text/javascript" src="js/redirection-mobile.js"></script>
+    <script type="text/javascript">
+        // <![CDATA[
+        SA.redirection_mobile({
+            mobile_url: "m.mscoastaljobs.com",
+        });
+
+        // ]]>
+    </script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5381330417949875",
+            enable_page_level_ads: true
+        });
+    </script>
     <script type="text/javascript">
         $(document).ready(function () {
             $.getJSON('https://api.sheety.co/17a8d6e0-1c89-47ef-9acd-34a07b65659c', function (data) {
@@ -42,7 +52,7 @@
             })
         })
     </script>
-       <script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function () {
             $.getJSON('https://api.sheety.co/17a8d6e0-1c89-47ef-9acd-34a07b65659c', function (data) {
                 var template = Handlebars.compile($('#item-template2').html())
@@ -59,8 +69,8 @@
                 <a href="#{{jobID}}">
              <div class="search-items" id="{{companyName}}"><h3>{{companyName}}</h3>
             <h4>{{jobPosition}}</h4>
-            <p>{{jobDescription}}</p>
-            <span style="display: none;">{{requirement}} {{location}} {{keyWords}}</span>
+            <p>{{{jobDescription}}}</p>
+            <span style="display: none;">{{requirement}} {{location}} {{keyWords}} {{pay}}</span>
         </div>
     </a>
 </li>
@@ -69,16 +79,48 @@
        
             
             <div class="micro-spacer"></div>
+
+           
         {{/each}}
     
     </script>
- 
+
     <script id="item-template2" type="text/x-handlebars-template">
-        <div id="upload" class="fil-upload">
-            <div class="file-upload-container">
-                <iframe src="https://www.docdroid.net/"></iframe>
-            </div>
+        <div class="resume-wrapper vivify fadeInDown" >
+       <div class="resume-uploader">
+            <div class="title">
+                    <h3><strong>Resume</strong> Uploader</h3>
+                </div>
+                <button class="close-upload" onclick="closeresume()">
+                    <p>Close</p>
+                    <i class="material-icons">close</i>
+                </button>
+            
+            <div class="upload-iframe-container">
+                    <iframe src="https://www.file.io/"  scrolling="no"></iframe>
+                </div>
+        <div class="upper-uploader">
+         
+           <div class="instructions">
+<div class="instruction">
+    <h4>Step 1</h4>
+    <p>Upload your resume to File.Io</p>
+</div>
+
+<div class="instruction">
+        <h4>Step 2</h4>
+        <p>Copy Your Document Link </p>
+    </div>
+   
+    <div class="instruction">
+            <h4>Step 3</h4>
+            <p>Paste In The Highlighted Field Below</p>
         </div>
+           </div>
+        </div>
+         
+       </div>
+   </div>
         {{#each this}}
 <style>
 #{{jobID}} {display:none;opacity:0;transition:0.5s ease;}
@@ -104,9 +146,15 @@
                         
                         
                      </div>
-                    
+                  
                      <div class="job-bottom">
-                        
+                            <div class="job-links">
+                                   
+                                   <a href="mailto:{{contactE-Mail}}" target="_blank">Email Us</a>
+                                   <a href="{{website}}" target="_blank">Website</a>
+                                   <a href="tel:{{phoneNumber}}" target="_blank">Call Us</a>
+                                   <a href="https://maps.google.com/?q={{address}}" target="_blank">Find Us</a>
+                                                        </div>
                          <div class="job-description">
                              <label>Job Description</label>
                              <p>{{jobDescription}}</p>
@@ -116,80 +164,73 @@
                              <label>About Us</label>
                              <p>{{aboutYourBusiness}}</p>
                          </div>
-                         <div class="job-buttons">
-                
-                            <a href=""><button>Save For Later</button></a>
-                           
+                         <div class="job-buttons">                
+                                                  
                         </div>
-                         <div class="job-links">
-                            <a href="mailto:{{contactE-Mail}}" target="_blank">{{contactE-Mail}}</a>
-                            <a href="{{website}}" target="_blank">Website</a>
-                            <a href="tel:{{phoneNumber}}" target="_blank">{{phoneNumber}}</a>
-                            <a href="https://maps.google.com/?q={{address}}" target="_blank">{{address}}</a>
-                                                 </div>
+                     
 
                      <div id="{{applyID}}" class="apply-form">
                             <label>Apply</label>
 
 
                             <hr />
-                            <form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
-                            <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactE-Mail}}" />
+                            <form style="padding-bottom:20px;" action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+                            <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactE-Mail}}"/>
                             <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="JCN4EDEZR9JZ" />
-                            <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
-                            <input id="skip_Subject" name="skip_Subject" type="hidden" value="Employment Application" />
+                            <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://www.mscoastaljobs.com/application-complete.html" />
+                            <input id="skip_Subject" name="skip_Subject" type="hidden" value="{{jobPosition}} Employment Application" />
                             <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
                             <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
                             <table border="0" cellpadding="5" cellspacing="0">
                             <tr>
+                                <input name="MS Coastal Jobs" style="display:none;" value="Hi, this is a message from MS Coastal Jobs.com. Your posted job, {{jobPosition}} has recieved an applicant the details are listed below. Feel free to reach out to them as soon as possible. If you have any problems contact us at hcdcdev@mscoast.com.">
                             <td style="width:50%">
                             <b>First name *</b><br />
-                            <input class="input-styling" name="First_Name" type="text" maxlength="50" style="width:245px" />
+                            
+                            <input class="input-styling" name="First Name" type="text" maxlength="50" style="width:245px" />
                             </td>
                             
                             <td style="width:50%">
                             <b>Last name *</b><br />
-                            <input class="input-styling" name="Last_Name" type="text" maxlength="50" style="width:245px" />
+                            <input class="input-styling" name="Last Name" type="text" maxlength="50" style="width:245px" />
                             </td>
                             </tr>
                             <tr>
                             <td colspan="2">
                             <b>Email *</b><br />
-                            <input class="input-styling" name="Email_Address" type="email" maxlength="100" style="width:535px" />
+                            <input class="input-styling" name="Email Address" type="email" maxlength="100" style="width:535px" />
                             </td>
                             </tr>
                             <tr>
-                            <td colspan="2">
-                            <b>Portfolio website</b><br />
-                            <input class="input-styling" name="Portfolio" type="url" maxlength="255" value="https://" style="width:535px" />
-                            </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                <b>Upload Resume</b><br />
-                                <input class="input-styling" name="Portfolio" type="text" maxlength="255" value="" style="width:535px" />
-                                <h5 onclick="upload">Upload</h5>
-                                </td>
+                               <td>
+                                <b>Upload Resume</b><br/>
+                               <details>
+                                   <summary onclick="resume()">Open Resume Uploader</summary>
+                                   <input class="input-styling resume-input" placeholder="Paste URL Here" name="Resume" type="url" maxlength="255" value="" style="width:535px" />
+                               </details>
+                            </td> 
+                                
+                               
                                 </tr>
                             <tr>
                           
                             <td style="width:50%">
                             <b>When can you start?</b><br />
-                            <input class="input-styling" name="StartDate" type="date" maxlength="50" style="width:245px" />
+                            <input class="input-styling" name="Start Date" type="date" maxlength="50" style="width:245px" />
                             </td>
                             
                            
                             <td style="width:50%">
                             <b>Phone *</b><br />
-                            <input class="input-styling" name="Phone" type="text" maxlength="50" style="width:245px" />
+                            <input class="input-styling" name="Phone Number" type="text" maxlength="50" style="width:245px" />
                             </td>
                           
                             </tr>
                             <tr>
                             <td colspan="2">
                             <b>Are you willing to relocate?</b><br />
-                            <input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes &nbsp; &nbsp; &nbsp;
-                            <input name="Relocate" type="radio" value="No" /> No &nbsp; &nbsp; &nbsp;
+                            <input name="Relocate" type="radio" value="Yes"  /> Yes &nbsp; &nbsp; &nbsp;
+                            <input name="Relocate" type="radio" value="No" checked="checked" /> No &nbsp; &nbsp; &nbsp;
                             <input name="Relocate" type="radio" value="NotSure" /> Not sure
                             </td>
                             </tr>
@@ -202,7 +243,7 @@
                             <tr>
                             <td colspan="2">
                             <b>Reference / Comments / Questions</b><br />
-                            <textarea name="Reference" rows="7" cols="40" style="width:535px"></textarea>
+                            <textarea name="Reference-Comments-" rows="7" cols="40" style="width:535px"></textarea>
                             </td>
                             </tr>
                             </table>
@@ -210,8 +251,7 @@
                             <div style="text-align:center;">
                             <table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
                             <tr><td colspan="2" style="padding-bottom:18px;">
-                            <!-- Please check our ProCaptcha service which is ad-free:
-                            https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+                            
                             <a href="http://www.snaphost.com/captcha" alt="captcha verification" title="captcha verification">
                             captcha verification</a></td></tr>
                             <tr>
@@ -232,7 +272,7 @@
                             </tr>
                             </table>
                             <br /><br />
-                            <input name="skip_Submit" type="submit" value="Send Application" />
+                            <input style="background-color: white; border:solid; border-width: 1px; border-color:lightgray;" name="skip_Submit" type="submit" value="Send Application" />
                             </div>
                             </form>
 
@@ -256,87 +296,86 @@
 
 <body>
     <nav id="header">
-            
-<div class="logo-container"><img class="logo" src="Branding/ms coastal jobs7w.png" id="colored-l" alt="MS Coastal Jobs Logo White"><img class="logo " alt="MS Coastal Jobs Logo Colored" id="white-l" src="Branding/ms coastal jobs.png"></div>
+
+        <div class="logo-container"><img class="logo" src="Branding/ms coastal jobs7w.png" id="colored-l"
+                alt="MS Coastal Jobs Logo White"><img class="logo " alt="MS Coastal Jobs Logo Colored" id="white-l"
+                src="Branding/ms coastal jobs.png"></div>
         <ul>
-            <li><a class="active-btn" href="index-loggedin.html">Home</a></li>
+            <li><a class="active-btn" href="index.html">Home</a></li>
             <li><a href="policies.html">Policies</a></li>
             <li><a href="https://www.mscoast.org/contact-us" target="_blank">Contact Us</a></li>
         </ul>
         <div class="login-options">
+            <div class="login-options">
                
-            <a href="createpost.html"><button style="background-color: white; color: black;">Post A Job</button></a>
-            <button  onclick="top.location.href = 'https://pub31.bravenet.com/passwd/logout.php?usernum=2600626585';" target="_top">Logout</button>
-           
+                <a href="createpost.html"><button style="background-color: white; color: black;">Post A Job</button></a>
+                <button  onclick="top.location.href = 'https://pub31.bravenet.com/passwd/logout.php?usernum=2600626585';" target="_top">Logout</button>
+               
+            </div>
         </div>
-        
+
     </nav>
-    
+
     <div class="spacer" style=""></div>
-<ul id="show-items"></ul>
+    <ul id="show-items"></ul>
     <div class="hero-text" id="hero-text">
         <h1>FIND A JOB IN HARRISON COUNTY, MISSISSIPPI</h1>
-        <a href=""><p>By Harrison County Development Commission</p></a>
+        <a href="">
+            <p>By Harrison County Development Commission</p>
+        </a>
     </div>
-    
+
     <section class="search" id="main-search">
         <div class="search-wrapper">
-            <div class="search-input-container"> <input autocomplete="off" autofocus class="search-input" type="search"
-                    id="mySearch" onkeyup="myFunction()" placeholder="&emsp; Search Job Title, Location, Requirements"
-                    title="Click To Search For Jobs"><i onclick="search()" class="material-icons search-icon" >search</i></div>
+            <div class="search-input-container"> <input autocomplete="off" autofocus value="internship"
+                    class="search-input" type="search" id="mySearch" onkeyup="myFunction()" onload="myFunction()"
+                    placeholder="&emsp; Search Job Title, Location, Requirements" title="Click To Search For Jobs"><i
+                    onclick="search()" class="material-icons search-icon">search</i></div>
         </div>
 
 
 
 
-<div id="viewer"></div>
+        <div id="viewer"></div>
 
-        <ul style="" id="myMenu" class="result-list animated slideInUp faster " style="padding-left-start {0px;}">
-
-            <div class="sort-elements"><select class="sort-options">
-                    <option selected>Sort By Profession</option>
-                    <option>Medical</option>
-                    <option>Engineering</option>
-                    <option>Management</option>
-                    <option>Marketing</option>
-                    <option>Finance</option>
-                </select>
-
-                <select class="sort-options">
-                    <option selected>Sort By Salary</option>
-                    <option>10,000-20,000</option>
-                    <option>20,000-30,000</option>
-                    <option>30,000-40,000</option>
-                    <option>50,000-60,000</option>
-                    <option>70,000-100,000+</option>
-                </select></div>
-
+        <ul id="myMenu" style="display: block;" class="result-list animated slideInUp faster "
+            style="padding-left-start {0px;}">
             <div class="empty-result ">
                 <h3>What You Searched For Is Currently Unavailable !</h3>
             </div>
-            <li><a href=""></a></li>
-       
             <div id="items"></div>
         </ul>
 
-        <script>function myFunction() {
+        <script>
+            function myFunction() {
                 var e, s, t;
-                for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
-            }</script>
-        <script>$('.search-input').keyup(function (e) {
+                for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu")
+                    .getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0]
+                    .innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
+            }
+
+            function foo() {
+                myFunction()
+                setTimeout(foo, 100);
+            }
+            foo();
+        </script>
+
+
+        <script>
+            $('.search-input').keyup(function (e) {
                 if (e.keyCode === 13) {
 
                     document.getElementsByClassName("result-list")[0].style.display = "block";
                 }
             });
-            
-            </script>
-            <script>
-            function search(){
+        </script>
+        <script>
+            function search() {
                 document.getElementsByClassName("result-list")[0].style.display = "block";
             }
-            </script>
-        </a>
+        </script>
+        </h5>
         <script>
             AOS.init();
         </script>
@@ -345,10 +384,11 @@
 
     <footer>
         <div class="footer-text-container">
-            <h5>Developed By <a target="_blank" href="https://www.jacobybroadnax.dev/">Jacoby Broadnax</a> & <a target="_blank" href="https://jaydenmageephotography.pixieset.com/">Jayden Magee</a>  </h5>
+            <h5>Developed By <a target="_blank" href="https://www.jacobybroadnax.dev/">Jacoby Broadnax</a> & <a
+                    target="_blank" href="https://jaydenmageephotography.pixieset.com/">Jayden Magee</a> </h5>
         </div>
-       
-   
+
+
     </footer>
     <script>
         $(window).scroll(function () {
@@ -359,7 +399,6 @@
                 $("#mySearch").removeClass("active");
             }
         });
-
     </script>
     <script>
         $(window).scroll(function () {
@@ -370,10 +409,9 @@
                 $("#header").removeClass("scrolled");
             }
         });
-
     </script>
- 
-      <script>
+
+    <script>
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             if (scroll > 400) {
@@ -382,7 +420,6 @@
                 $("#white-l").removeClass("ms");
             }
         });
-
     </script>
     <script>
         $(window).scroll(function () {
@@ -393,9 +430,8 @@
                 $("#colored-l").removeClass("sm");
             }
         });
-
     </script>
-       <script>
+    <script>
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             if (scroll > 400) {
@@ -404,7 +440,65 @@
                 $("#hero-text").removeClass("scr");
             }
         });
+    </script>
+    <script>
+        function resume() {
+            document.getElementsByClassName("resume-wrapper")[0].style.display = "block";
+        }
+    </script>
+     <script>
+        function closeresume() {
+            document.getElementsByClassName("resume-wrapper")[0].style.display = "none";
+        }
+    </script>
+    <script type="text/javascript">
+        function ValidateForm(frm) {
+            if (frm.First_Name.value == "") {
+                alert('First name is required.');
+                frm.First_Name.focus();
+                return false;
+            }
+            if (frm.Last_Name.value == "") {
+                alert('Last name is required.');
+                frm.Last_Name.focus();
+                return false;
+            }
+            if (frm.Email_Address.value == "") {
+                alert('Email address is required.');
+                frm.Email_Address.focus();
+                return false;
+            }
+            if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {
+                alert('Please enter a valid email address.');
+                frm.Email_Address.focus();
+                return false;
+            }
 
+            if (frm.Phone.value == "") {
+                alert('Phone is required.');
+                frm.Phone.focus();
+                return false;
+            }
+            if (frm.skip_CaptchaCode.value == "") {
+                alert('Enter security code.');
+                frm.skip_CaptchaCode.focus();
+                return false;
+            }
+            return true;
+        }
+
+        function ReloadCaptchaImage(captchaImageId) {
+            var obj = document.getElementById(captchaImageId);
+            var src = '' + obj.src;
+            obj.src = '';
+            var date = new Date();
+            var pos = src.indexOf('&rad=');
+            if (pos >= 0) {
+                src = src.substr(0, pos);
+            }
+            obj.src = src + '&rad=' + date.getTime();
+            return false;
+        }
     </script>
 </body>
 

@@ -35,14 +35,23 @@
           
           <input class="post-input-left" placeholder="Job Position" title="Job Position" name="entry.1851494288" >
           
-          <input class="post-input-left" placeholder="Salary (Optional)" title="Pay" name="entry.1918061595">
+          <select class="post-menu" name="entry.1918061595" required>
+              <option value="" default >Job Type</option>
+              <option value="Internship">Internship</option>
+              <option value="Part-Time">Part-Time</option>
+              <option value="Full-Time">Full-Time</option>
+            
+            </select>
           
           <textarea placeholder="Job Description" title="Job Description" name="entry.1444038292"></textarea>
           <textarea placeholder="Requirements" title="Requirements" name ="entry.1380713551"></textarea>
           <textarea placeholder="About Your Business" title="About Your Business" name ="entry.723602998"></textarea>
-          <textarea class="post-input-left" id='foo' readonly="readonly" style="border: none;" title="Job ID (DO NOT EDIT)" name="entry.2100899197"></textarea>
-          <textarea style="display: none;" class="post-input-left" id='foo2' readonly="readonly" style="font-size:10px;border:none; margin-top: -50px;" title="Job ID (DO NOT EDIT)" name="entry.491820168"></textarea>
-          <textarea style="display: none;" class="post-input-left" id='foo3' readonly="readonly" style="font-size:10px;border:none; margin-top: -50px;" title="Apply ID (DO NOT EDIT)" name="entry.1979692715"></textarea>
+       
+          <textarea class="post-input-left" id='foo' readonly="readonly" style="display: none;" title="Job ID (DO NOT EDIT)" name="entry.2100899197"></textarea>
+          <textarea class="post-input-left" id='foo2' readonly="readonly" style="display: none;" title="Job ID (DO NOT EDIT)" name="entry.491820168"></textarea>
+          <textarea  class="post-input-left" id='foo3' readonly="readonly" style="display: none;" title="Apply ID (DO NOT EDIT)" name="entry.1979692715"></textarea>
+               
+    
         </div>
         <div class="right-sect">
          <div class="micro-spacer"></div>
@@ -66,8 +75,7 @@
             <option>D'lberville</option>
             <option>Saucier</option>
           </select>
-          
-         
+     
 
           <div class="button-container">
             <button type="submit">Submit</button>

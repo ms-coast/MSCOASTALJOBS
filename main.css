@@ -1,6 +1,10 @@
 nav {position: absolute; left: 0px; top: 0px;  width: 100%; background-color: transparent;z-index:101;height: 75px;}
 
-body {margin: 0px; padding: 0px; font-family:roboto, sans-serif;background-image: url(images/shipping\ container.jpg); background-repeat: no-repeat; background-size: cover;background-attachment: fixed; scroll-behavior: smooth }
+body {margin: 0px; padding: 0px; font-family:roboto, sans-serif;background-image: url(images/shipping\ container.jpg); background-repeat: no-repeat; background-size: cover;background-attachment: fixed; scroll-behavior: smooth;}
+
+
+
+#body.imgb {background-image: url(/Images/Dark\ shipping\ container.webp);;}
 
 html {scroll-behavior: smooth}
 
@@ -189,11 +193,11 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 .job-wrapper {margin: auto; width: 623px;background-color: white;border-radius: 5px;margin-bottom: 150px;margin-top: 120px;position: relative; z-index: 150px; }
 
 .job-element-container {
-    width: 100%;;;background-color: rgba(0, 0, 0, 0.58);;height:100%;border-radius: 12px;display: none;position: fixed; left: 0px;top: 0px;padding-top:  75px;z-index:100;;overflow-x: scroll;p}
+    width: 100%;;;background-color: rgba(0, 0, 0, 0.58);;height:100%;border-radius: 12px;display: none;position: fixed; left: 0px;top: 0px;padding-top:  75px;z-index:150;;overflow-x: scroll;}
 
     .job-element-container::-webkit-scrollbar{width: 0px;}
 
-.job-top {margin-top: 0px;padding: 20px;padding-bottom: 80px;padding-top: 10px;position: sticky; top:-75px;background-color: white;border-radius: 10px 10px 0px 0px;z-index:150;border-bottom: solid; border-width: 1px; border-color: lightgray;}
+.job-top {margin-top: 0px;padding: 20px;padding-bottom: 80px;padding-top: 10px;position: sticky; top:-75px;background-color: white;border-radius: 10px 10px 0px 0px;z-index:300;border-bottom: solid; border-width: 1px; border-color: lightgray;}
 
 .job-button {background-color: white; border: solid; border-width: 1px; border-color: lightgray;border-radius: 4px;}
 
@@ -201,7 +205,7 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 
 .job-logo {width:170px; height: 210px;background-color: white; border-radius: 10px;float: left;margin-top: 160px;margin-left: 50px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12);object-fit: contain;}
 
-.close-button {color: black; margin-top: 30px;float: right;position: sticky; z-index: 200;margin-right: 30px;top: -50px;;;}
+.close-button {color: black; margin-top: 30px;float: right;position: sticky; z-index: 300000;margin-right: 30px;top: -50px;;;}
 
 .job-top > h3 {font-size:16px;color: black;font-weight: bold;margin-bottom: -7px;float: left;}
 
@@ -211,9 +215,13 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 
 .job-buttons > a > button {color: black;margin-left: 20px;background-color: white; border:solid; border-color: lightgray; border-width: 1px;border-radius: 5px; }
 
+.job-top > p > a {margin-left: 10px;color: black;transition: 0.2s ease;text-decoration: underline;;}
+
+.job-top > p > a:hover {font-size: 15px;text-decoration: none;}
+
 .job-buttons {margin-top: 35px;}
 
-.job-description {margin: auto; width: 580px;margin-top: 15px;}
+.job-description {margin: auto; width: 580px;border-top: 1px lightgray solid;padding-top: 15px;;;}
 
 .job-description > p {text-align: left;line-height: 20px;font-size: 13px;margin-top:5px }
 
@@ -221,9 +229,9 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 
 .vertical-divider {width: 1px; height: 16px;float: left;background-color: lightgray;margin-left: 10px;margin-top: 16px;}
 
-.job-links {margin-top: 15px;margin: auto; width:540px;padding: 20px;}
+.job-links {margin:auto;padding: 20px;margin-top: -8px;width: 260px;margin-bottom: -8px;;}
 
-.job-links > a {margin-left: 10px;font-size: 12.5px; color: black; }
+.job-links > a {margin-left: 10px;font-size: 12.5px; color: black;font-weight: normal; }
 
 /*-------------------------------------------------------------------------------Login Page--------------------------------------------------------------------------------*/
 
@@ -231,7 +239,7 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 
 .log-in > input:focus {outline: none;}
 
-.log-in-container {margin: auto; width:350px;margin-top: -15px;}
+.log-in-container {width:350px;margin-top: 140px;margin-left:50px;}
 
 .log-in-container > button {}
 
@@ -253,3 +261,44 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 .input-styling {height: 35px; border-radius: 5px; border: solid; border-width: 1px;border-color: lightgray;padding-left: 16px;}
 
 .apply-form {margin: auto; width: 560px;}
+
+/*--------------------------------------Resume-Uploader-------------------------------------------------------*/
+
+.resume-wrapper {display: none;position: fixed; top:10px; left:0px; width:100%; z-index:350;}
+
+.resume-uploader {margin: auto; width: 600px;;;background-color:rgb(252, 252, 252);border-bottom: solid 1px lightgray; border-top:solid 1px lightgray;padding-bottom: 20px;
+ box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.178);border-radius: 5px;;}
+
+.upload-iframe-container {margin: auto; width: 580px; ;;;}
+
+.title > h3 {text-align:center;font-weight: normal;}
+
+.upload-iframe-container > iframe{width:100%; height: 230px;border: none;border-radius: 5px;}
+
+.instruction {display:inline-block;margin-left: 6px;padding-right: 6px;height: 50px;}
+
+.instructions {margin-top: -50px;margin-left: 7px;}
+
+.instruction > p {margin-top:-17px;font-size: 13px;;}
+
+.upper-uploader {position: relative; z-index: 15;margin-top: 50px;;;}
+
+.vert-divider {display: inline-block;width:
+  1px; background-color: black; height:30px;margin-top: 5px;}
+
+.resume-input {
+border: solid 2px #4696e5;position: relative;width: 250px !important;}
+
+.close-upload {float: right;margin-top: -50px;border-radius: 5px;margin-right: 10px;border: none; background-color: transparent;}
+
+.close-upload > i {float: left;padding-top: 8px;}
+
+.close-upload > p {float: left;padding-top: 8px;margin-top: 5px;}
+
+/*----------------------------------------------Privacy Policy--------------------------------------------------------*/
+
+.privacy-policy {color:white}
+
+.p-policy {width: 600px;margin-left: 52px;margin-top: 200px;margin-bottom: 100px;}
+
+
