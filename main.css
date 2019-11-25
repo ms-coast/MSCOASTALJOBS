@@ -52,9 +52,9 @@ details:focus {outline: none;}
 summary:focus {outline: none;}
 
 
-summary > h3 {font-size: 16px;color: black;float: left;width: 320px;margin-bottom: 1px;}
+summary > h3 {font-size: 16px;color: black !important;float: left;width: 320px;margin-bottom: 1px;}
 
-summary > h4 {font-size: 12px;font-weight: normal;margin-top: -10px;color: black;text-align: left;width: 200px;}
+summary > h4 {font-size: 12px !important;font-weight: normal;margin-top: -10px;color: black;text-align: left;width: 200px;}
 
 summary > span {font-size: 10px;margin-right: 25px;color: black;padding-right: 10px;width: 150px;float: left;}
 
@@ -66,9 +66,16 @@ summary > p {font-size: 14px; color: black;}
 
 .result-li {margin-top: 20px;}
 
+.job-links {margin-left: -20px;margin-bottom: 20px;}
 
+.job-links > a {border: solid 1px lightgray; padding: 7px;background-color: white;border-radius: 50px; color: black;margin-left: 5px;}
 
-
+details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
 
 details summary::-webkit-details-marker {
     background: url(/Assets/baseline-keyboard_arrow_down-24px.svg) center no-repeat;
