@@ -9,7 +9,7 @@
 
        <!-- Compiled and minified JavaScript -->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-               
+              <link rel="stylesheet" href="vivify.min.css"> 
     <meta name="description"
         content="We empower businesses and hard-working members of our community by connecting people with businesses.">
     <meta name="keywords"
@@ -54,28 +54,37 @@
 </style>
         {{#each this}}
         <li class="result-li" style="list-style-type:none; transform: rotateZ(180deg);">
-            <a>
+            
+            <a style="color: black;">
+                   
             <details>
-           <summary>
-            <h3 style="width: 90%;">
+           
+           <summary style="padding-top: 5px;border-radius: 7px !important;" class="waves-effect" >
+                <div class="job-links" >
+                                   
+                        <a href="mailto:{{contactE-Mail}}" target="_blank">Email Us</a>
+                        <a href="tel:{{phoneNumber}}" target="_blank">Call Us</a>
+                                             </div>   
+            <h3 style="width: 90%;font-size: 20px;margin-top: 5px;margin-left: 5px;">
                     {{jobPosition}}
             </h3>
 
-            <span>
+            <span style="margin-left: 5px;">
 {{pay}}
 </span>
          
-            <h4>
+            <h4 style="font-size: 12px;margin-left: 5px;">
 {{companyName}}
             </h4>
-            <p>
+            <p style="border-top: solid 1.3px lightgray;padding-top: 8px;margin-left: 5px;">
 {{jobDescription}}
             </p>
-        </div>
+      
+        
     </summary>
    
 
-    <div class="result-expand animated fadeIn"  id="{{jobID}}" >
+    <div class="result-expand vivify fadeIn"  id="{{jobID}}" >
        
         <div class="spacer"></div>
         <label>Job Requirements</label>
@@ -222,14 +231,7 @@
             <script>function myFunction() {
                     var e, s, t;
                     for (e = document.getElementById("mySearch").value.toUpperCase(), s = document.getElementById("myMenu").getElementsByTagName("li"), t = 0; t < s.length; t++) - 1 < s[t].getElementsByTagName("a")[0].innerHTML.toUpperCase().indexOf(e) ? s[t].style.display = "block" : s[t].style.display = "none"
-                }
-                
-                function foo() {
-                myFunction()
-                setTimeout(foo, 100);
-            }
-            foo();
-                </script>
+                }</script>
             <script>$('.search-input').keyup(function (e) {
                     if (e.keyCode === 13) {
                         document.getElementsByClassName("result-list")[0].style.display = "block";
