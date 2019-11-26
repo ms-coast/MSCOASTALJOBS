@@ -1,6 +1,6 @@
 nav {position: absolute; left: 0px; top: 0px;  width: 100%; background-color: transparent;z-index:101;height: 75px;}
 
-body {margin: 0px; padding: 0px; font-family:roboto, sans-serif;background-image: url(images/shipping\ container.jpg); background-repeat: no-repeat; background-size: cover;background-attachment: fixed; scroll-behavior: smooth;}
+body {margin: 0px; padding: 0px; font-family:roboto, sans-serif;background-image: url(images/shipping\ container.jpg); background-repeat: no-repeat; background-size: cover;background-attachment: fixed; scroll-behavior: smooth;transition: 0.3s ease;}
 
 
 
@@ -21,7 +21,7 @@ nav > ul > li {display: inline-block; text-decoration: none;margin-left: 20px;fo
 
 .login-options {position: absolute; right: 30px; top:0px; }
 
-.login-options > a > button {background-color: transparent; border: none; width: 85px;height: 35px; border-radius: 0px; margin-left: 7px;border-radius: 5px;margin-top: 20px;color: white;transition: 0.2s ease; }
+.login-options > a > button {background-color: transparent; border: none; height: 35px; border-radius: 0px; margin-left: 7px;border-radius: 5px;margin-top: 20px;color: white;transition: 0.2s ease;padding-left: 5px;padding-right: 5px; }
 
 .login-options > a > button:hover {font-size: 15px; cursor: pointer}
 
@@ -193,7 +193,7 @@ footer {position: fixed; bottom: 0px; left: 0px;width: 100%;z-index: 5;;;}
 .job-wrapper {margin: auto; width: 623px;background-color: white;border-radius: 5px;margin-bottom: 150px;margin-top: 120px;position: relative; z-index: 150px; }
 
 .job-element-container {
-    width: 100%;;;background-color: rgba(0, 0, 0, 0.58);;height:100%;border-radius: 12px;display: none;position: fixed; left: 0px;top: 0px;padding-top:  75px;z-index:150;;overflow-x: scroll;}
+    width: 100%;;;background-color: rgba(0, 0, 0, 0.58);;height:100%;border-radius: 12px;display: none;;position: fixed; left: 0px;top: 0px;padding-top:  75px;z-index:150;;overflow-x: scroll;}
 
     .job-element-container::-webkit-scrollbar{width: 0px;}
 
@@ -301,4 +301,8 @@ border: solid 2px #4696e5;position: relative;width: 250px !important;}
 
 .p-policy {width: 600px;margin-left: 52px;margin-top: 200px;margin-bottom: 100px;}
 
+/*---------------------------------Job-manager---------------------------------------------*/
 
+.managed-job > input {width: 100%;;}
+
+.managed-job > form {margin-top: 50px;;}

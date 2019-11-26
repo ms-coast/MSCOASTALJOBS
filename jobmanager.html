@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>MS Coastal Jobs | Job Manager</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="description"
+        content="We empower businesses and hard-working members of our community by connecting people with businesses.">
+    <meta name="keywords"
+        content="Harrison County, Mississippi Jobs, Gulfcoast Jobs, Gulfport Jobs, Longbeach Jobs, Biloxi Jobs, Industrial Jobs, ">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+    </script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="vivify.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="branding/favicon.png" />
+    <script src="Script.js"></script>
+    <script data-ad-client="ca-pub-5381330417949875" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5381330417949875",
+            enable_page_level_ads: true
+        });
+    </script>
+    <script type="text/javascript" src="js/redirection-mobile.js"></script>
+    <script type="text/javascript">
+        // <![CDATA[
+        SA.redirection_mobile({
+            mobile_url: "m.mscoastaljobs.com",
+        });
+
+        // ]]>
+    </script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5381330417949875",
+            enable_page_level_ads: true
+        });
+        </script>
+        <script type="text/javascript">
+$(document).ready(function(){
+	$.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/msCoastalJobs/jobs', function(data) {
+		var template = Handlebars.compile($('#item-template').html())
+		$('#viewer').html(template(data.jobs))
+	})
+})
+</script>
+<script id="item-template" type="text/x-handlebars-template">
+<ul class="products">
+    {{#each this}}
+
+  
+		<div class="managed-job">
+            <button onclick="document.getElementById('jobposition').value = '{{jobPosition}}';document.getElementById('jobdescription').value = '{{jobDescription}}';document.getElementById('requirements').value = '{{requirement}}';document.getElementById('pay').value = '{{pay}}';">Inject Content</button>
+           
+            </div>
+	{{/each}}
+</ul>
+</script>
+
+</head>
+
+<body id="body">
+    <nav id="header">
+
+        <div class="logo-container"><img class="logo" src="Branding/ms coastal jobs7w.png" id="colored-l"
+                alt="MS Coastal Jobs Logo White"><img class="logo " alt="MS Coastal Jobs Logo Colored" id="white-l"
+                src="Branding/ms coastal jobs.png"></div>
+        <ul>
+            <li><a class="active-btn" href="index.html">Home</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="https://www.mscoast.org/contact-us" target="_blank">Contact Us</a></li>
+        </ul>
+        <div class="login-options">
+            <a href="createpost.html"><button style="background-color: white; color: black;">Job Manager</button></a>
+            <a href="Pricing.html"><button>Sign Up</button></a>
+            <a href="signin.html"><button>Log In</button></a>
+        </div>
+
+    </nav>
+
+    <div class="spacer" style=""></div>
+    <ul id="show-items"></ul>
+    <div class="hero-text" id="hero-text">
+        <h1>Job Manager</h1>
+        <a href="">
+            <p>By Harrison County Development Commission</p>
+        </a>
+    </div>
+
+        <script>
+            AOS.init();
+        </script>
+
+   <section class="privacy-policy">
+   <div class="jobmanager-container">
+       <div id="viewer">
+<h1>Content Loading</h1>
+       </div>
+   </div>
+   </section>
+   <script type="text/javascript">
+    $(document).ready(function () {
+        $('#webform').submit(function (e) {
+            e.preventDefault();
+            let form = $(this);
+            $.ajax({
+                type: 'put',
+                dataType: 'json',
+                url: form.attr('action'),
+                data: {
+                    jobs: {
+                        jobDescription: $('#jobdescription').val(),
+                        jobPosition: $('#jobposition').val()
+                    }
+                },
+                success: function () {
+                    $('#success').show();
+                    $('#webform').hide();
+                },
+                error: function (xhr, res, text) {
+                    alert("Sorry, An Error Occured, Try Again. :(");
+                }
+            });
+        });
+    });
+</script>
+ <form id="webform"  action="https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/msCoastalJobs/jobs/2">
+    <input  id="jobposition" type="text" value="{{jobPosition}}">
+    
+   
+    <br>
+    <input id="jobdescription" type="text" value="{{jobDescription}}">
+    <br>
+    <input type="submit" value="Confirm Change">
+                </form>
+                <h1 id="success" style="display: none;">
+                        Great! That Was A Success
+                    </h1>
+    <footer>
+        <div class="footer-text-container">
+            <h5>Developed By <a target="_blank" href="https://www.jacobybroadnax.dev/">Jacoby Broadnax</a> & <a
+                    target="_blank" href="https://jaydenmageephotography.pixieset.com/">Jayden Magee</a> </h5>
+        </div>
+
+
+    </footer>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 300) {
+                $("#mySearch").addClass("active");
+            } else {
+                $("#mySearch").removeClass("active");
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 200) {
+                $("#header").addClass("scrolled");
+            } else {
+                $("#header").removeClass("scrolled");
+            }
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 400) {
+                $("#white-l").addClass("ms");
+            } else {
+                $("#white-l").removeClass("ms");
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 400) {
+                $("#colored-l").addClass("sm");
+            } else {
+                $("#colored-l").removeClass("sm");
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 100) {
+                $("#hero-text").addClass("scr");
+            } else {
+                $("#hero-text").removeClass("scr");
+            }
+        });
+    </script>
+
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $("#body").addClass("imgb");
+        } else {
+            $("#body").removeClass("imgb");
+        }
+    });
+</script>
+    <script>
+        function resume() {
+            document.getElementsByClassName("resume-wrapper")[0].style.display = "block";
+        }
+    </script>
+     <script>
+        function closeresume() {
+            document.getElementsByClassName("resume-wrapper")[0].style.display = "none";
+        }
+    </script>
+    <script type="text/javascript">
+        function ValidateForm(frm) {
+            if (frm.First_Name.value == "") {
+                alert('First name is required.');
+                frm.First_Name.focus();
+                return false;
+            }
+            if (frm.Last_Name.value == "") {
+                alert('Last name is required.');
+                frm.Last_Name.focus();
+                return false;
+            }
+            if (frm.Email_Address.value == "") {
+                alert('Email address is required.');
+                frm.Email_Address.focus();
+                return false;
+            }
+            if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {
+                alert('Please enter a valid email address.');
+                frm.Email_Address.focus();
+                return false;
+            }
+
+            if (frm.Phone.value == "") {
+                alert('Phone is required.');
+                frm.Phone.focus();
+                return false;
+            }
+            if (frm.skip_CaptchaCode.value == "") {
+                alert('Enter security code.');
+                frm.skip_CaptchaCode.focus();
+                return false;
+            }
+            return true;
+        }
+
+        function ReloadCaptchaImage(captchaImageId) {
+            var obj = document.getElementById(captchaImageId);
+            var src = '' + obj.src;
+            obj.src = '';
+            var date = new Date();
+            var pos = src.indexOf('&rad=');
+            if (pos >= 0) {
+                src = src.substr(0, pos);
+            }
+            obj.src = src + '&rad=' + date.getTime();
+            return false;
+        }
+    </script>
+</body>
+
+</html>

@@ -46,27 +46,27 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $.getJSON('https://api.sheety.co/17a8d6e0-1c89-47ef-9acd-34a07b65659c', function (data) {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/msCoastalJobs/jobs', function (data) {
                 var template = Handlebars.compile($('#item-template').html())
-                $('#items').html(template(data))
+                $('#items').html(template(data.jobs))
             })
         })
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $.getJSON('https://api.sheety.co/17a8d6e0-1c89-47ef-9acd-34a07b65659c', function (data) {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/msCoastalJobs/jobs', function (data) {
                 var template = Handlebars.compile($('#item-template2').html())
-                $('#viewer').html(template(data))
+                $('#viewer').html(template(data.jobs))
             })
         })
     </script>
     <script id="item-template" type="text/x-handlebars-template">
 
         {{#each this}}
-
+      
 
             <li id="{{jobSubID}}" class="{{applyID}}" style="text-decoration: none;list-style-type: none;">
-                <a href="#{{jobID}}">
+                <a href="#{{jobId}}">
              <div class="search-items" id="{{companyName}}"><h3>{{companyName}} | {{pay}}</h3>
             <h4>{{jobPosition}} </h4>
             <p>{{{jobDescription}}}</p>
@@ -123,18 +123,18 @@
    </div>
         {{#each this}}
 <style>
-#{{jobID}} {display:none;opacity:0;transition:0.5s ease;}
+#{{jobId}} {display:none;opacity:0;transition:0.5s ease;}
 
-#{{jobID}}:target{display:block;opacity: 1;}
+#{{jobId}}:target{display:block;opacity: 1;}
 
 
 </style>
 
        
-        <div id="{{jobID}}" class="job-element-container animated fadeIn" style="#{{jobID}}:target {display:block}"> 
+        <div id="{{jobId}}" class="job-element-container animated fadeIn" style="#{{jobId}}:target {display:block};"> 
                
                  <div class="job-wrapper animated fadeInUp faster">
-                     <a href="#{{jobSubID}}">
+                     <a href="#{{jobSubId}}">
                          <i class="material-icons close-button">close</i>
                      </a>
                      <div class="job-top" >
@@ -150,7 +150,7 @@
                      <div class="job-bottom">
                             <div class="job-links">
                                    
-                                   <a href="mailto:{{contactE-Mail}}" target="_blank">Email Us</a>
+                                   <a href="mailto:{{contactEMail}}" target="_blank">Email Us</a>
                                    <a href="{{website}}" target="_blank">Website</a>
                                    <a href="tel:{{phoneNumber}}" target="_blank">Call Us</a>
                                    <a href="https://maps.google.com/?q={{address}}" target="_blank">Find Us</a>
@@ -175,7 +175,7 @@
 
                             <hr />
                             <form style="padding-bottom:20px;" action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
-                            <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactE-Mail}}"/>
+                            <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="{{contactEMail}}"/>
                             <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="JCN4EDEZR9JZ" />
                             <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://www.mscoastaljobs.com/application-complete.html" />
                             <input id="skip_Subject" name="skip_Subject" type="hidden" value="{{jobPosition}} Employment Application" />
